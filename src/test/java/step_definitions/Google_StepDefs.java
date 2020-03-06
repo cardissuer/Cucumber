@@ -6,6 +6,7 @@ import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import pages.google_pages.GoogleLandingPage;
 import utilities.Driver;
+import utilities.log;
 
 public class Google_StepDefs {
 
@@ -18,6 +19,7 @@ public class Google_StepDefs {
 
         //1-get the google page
         Driver.getDriver().get("https://www.google.com");
+        log.info("user is on google page");
     }
     @Then("User should see title contains Google")
     public void user_should_see_title_contains_Google() {
@@ -29,6 +31,7 @@ public class Google_StepDefs {
         String actualTitle=Driver.getDriver().getTitle();
         String expectedIntTitle="Google";
         Assert.assertTrue("Title does not contain expected value!",actualTitle.contains(expectedIntTitle));
+        log.info("user sees the title");
     }
 
     @Then("User types wooden spoon into the search box")
@@ -36,6 +39,7 @@ public class Google_StepDefs {
         // Write code here that turns the phrase above into concrete actions
         //throw new cucumber.api.PendingException();
         googleLandingPage.searchBox.sendKeys("wooden spoon" + Keys.ENTER);
+        log.warn("user enters wooden spoon name");
     }
 
     @Then("User clicks on search button")
@@ -53,5 +57,7 @@ public class Google_StepDefs {
         String expectedTitle = "wooden spoon";
 
         Assert.assertTrue("Title doesn't match expected one", actualTitle.contains(expectedTitle));
+
+        log.warn("user checks if it's ok");
     }
 }

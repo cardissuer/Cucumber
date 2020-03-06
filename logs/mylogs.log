@@ -1,0 +1,16 @@
+[INFO ] 2020-03-05 20:08:36.229 [main] log - Scenario start pointGoogle title verification
+[INFO ] 2020-03-05 20:08:49.160 [main] log - user is on goolle page
+[INFO ] 2020-03-05 20:11:53.853 [main] log - Scenario start pointGoogle title verification
+[INFO ] 2020-03-05 20:12:07.274 [main] log - user is on google page
+[INFO ] 2020-03-05 20:12:07.294 [main] log - user sees the title
+[INFO ] 2020-03-05 20:12:07.302 [main] log - Scenario start pointGoogle Title verification after search
+[INFO ] 2020-03-05 20:12:07.768 [main] log - user is on google page
+[WARN ] 2020-03-05 20:12:10.749 [main] log - user enters wooden spoon name
+[WARN ] 2020-03-05 20:12:10.764 [main] log - user checks if it's ok
+[INFO ] 2020-03-05 21:02:17.934 [main] log - Scenario start pointGoogle title verification
+[INFO ] 2020-03-05 21:02:32.583 [main] log - user is on google page
+[INFO ] 2020-03-05 21:02:32.600 [main] log - user sees the title
+[INFO ] 2020-03-05 21:02:32.894 [main] log - Scenario start pointGoogle Title verification after search
+[INFO ] 2020-03-05 21:02:34.009 [main] log - user is on google page
+[WARN ] 2020-03-05 21:02:38.795 [main] log - user enters wooden spoon name
+[WARN ] 2020-03-05 21:02:38.807 [main] log - user checks if it's ok
