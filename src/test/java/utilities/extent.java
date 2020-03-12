@@ -8,8 +8,6 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 
 public class extent {
 
-
-
     private static ExtentHtmlReporter config;
     private static ExtentReports report;
     private static ExtentTest extentTest;

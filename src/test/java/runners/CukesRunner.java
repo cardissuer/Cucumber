@@ -9,15 +9,15 @@ import utilities.extent;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = "html:target/cucumber-reports",
+        plugin = {"html:target/cucumber-reports", "json: target/cukesreport.json"},
         features = "src/test/resources/features",
         glue = "step_definitions",
-        dryRun = false,
+        dryRun = true,
         tags = "@google"
 )
 public class CukesRunner {
-@AfterClass
-    public static void teardown(){
-    extent.fail();
-}
+//@AfterClass
+//    public static void teardown(){
+//    extent.fail();
+//}
 }

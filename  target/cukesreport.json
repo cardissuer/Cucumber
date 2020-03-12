@@ -1,0 +1,180 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1637800,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.setup(Scenario)"
+            }
+          }
+        ],
+        "line": 8,
+        "name": "Google title verification",
+        "description": "",
+        "id": "google-feature-verifications;google-title-verification",
+        "after": [
+          {
+            "result": {
+              "duration": 7100,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 56800,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "User is on google homepage",
+            "match": {
+              "location": "Google_StepDefs.user_is_on_google_homepage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9100,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "User should see title contains Google",
+            "match": {
+              "location": "Google_StepDefs.user_should_see_title_contains_Google()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@smokeTest"
+          },
+          {
+            "name": "@google"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 14000,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.setup(Scenario)"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Google Title verification after search",
+        "description": "",
+        "id": "google-feature-verifications;google-title-verification-after-search",
+        "after": [
+          {
+            "result": {
+              "duration": 8200,
+              "status": "skipped"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 15000,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "User is on google homepage",
+            "match": {
+              "location": "Google_StepDefs.user_is_on_google_homepage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 9500,
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": "User types wooden spoon into the search box",
+            "match": {
+              "location": "Google_StepDefs.user_types_wooden_spoon_into_the_search_box()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10900,
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": "User clicks on search button",
+            "match": {
+              "location": "Google_StepDefs.user_clicks_on_search_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 8700,
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "User should see wooden spoon in the title",
+            "match": {
+              "location": "Google_StepDefs.user_should_see_wooden_spoon_in_the_title()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          },
+          {
+            "name": "@miniRegression"
+          },
+          {
+            "name": "@google"
+          }
+        ]
+      }
+    ],
+    "name": "Google feature verifications",
+    "description": "  Agile Story: User Stories,acceptance criteria\n  Basically we can pass here any additional information related to this feature file",
+    "id": "google-feature-verifications",
+    "keyword": "Feature",
+    "uri": "src/test/resources/features/google.feature",
+    "tags": [
+      {
+        "name": "@Regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 3
+        }
+      }
+    ]
+  }
+]
