@@ -15,6 +15,6 @@ public class InstaTesting {
         instagram.addUser(user1);
         InstagramUser user2 = new InstagramUser("James Bond", 54, "james");
         instagram.addUser(user2);
-        instagram.seeAllUsers();
+        instagram.seeAllUsers("jason");
     }
 }
