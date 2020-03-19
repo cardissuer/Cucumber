@@ -6,12 +6,12 @@ import lombok.Data;
 
 import java.util.List;
 
-
 @Data
 @JsonInclude(JsonInclude.Include.NON_DEFAULT)
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class requestBody {
+public class ResponseBody {
 
     List <student> students;
+    List <Teacher> teachers;
 
 }

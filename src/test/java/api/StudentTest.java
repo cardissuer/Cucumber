@@ -3,7 +3,6 @@ package api;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
-import okhttp3.ResponseBody;
 import org.junit.Test;
 
 public class StudentTest {
@@ -15,7 +14,7 @@ public class StudentTest {
         System.out.println(response.asString());
 
         ObjectMapper objectMapper = new ObjectMapper();
-        responseBody responseBody = objectMapper.readValue(response.asString(), api.responseBody.class);
+        ResponseBody responseBody = objectMapper.readValue(response.asString(), ResponseBody.class);
 
         int counter = 0;
         for (student student:  responseBody.getStudents()){

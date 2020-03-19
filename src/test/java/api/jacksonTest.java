@@ -7,11 +7,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import lombok.Data;
-import okhttp3.ResponseBody;
 import org.junit.Test;
-
-import javax.sound.midi.Soundbank;
-import java.awt.geom.RectangularShape;
 
 
 @Data
@@ -39,7 +35,6 @@ public class jacksonTest {
         subject.setBatch(14);
         subject.setName("Automation");
         subject.setYear(2020);
-        teacher.setSubject (subject);
         ObjectMapper objectMapper = new ObjectMapper();
         String teacherJson = objectMapper.writeValueAsString(teacher);
         System.out.println(teacherJson);
@@ -73,7 +68,7 @@ public class jacksonTest {
             Response response = RestAssured.get("http://api.cybertektraining.com/student/6842");
             System.out.println(response.asString());
             ObjectMapper objectMapper = new ObjectMapper();
-            responseBody rb = objectMapper.readValue(response.asString(),responseBody.class);
+            ResponseBody rb = objectMapper.readValue(response.asString(), ResponseBody.class);
             String fName =rb.getStudents().get(0).getFirstName();
             System.out.println(fName);
         }
