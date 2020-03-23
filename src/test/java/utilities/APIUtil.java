@@ -15,7 +15,7 @@ public class APIUtil {
     //CRUD Operation. One method should handle any API we are hitting. One method for each operation.
     private static ResponseBody responseBody;
 
-    public static void hitGET (String resource) {
+    public static void hitGET(String resource) {
         String uri = Config.getProperty("baseURL") + resource;
         Response response = RestAssured.get(uri);
         System.out.println(response.asString());
@@ -28,17 +28,17 @@ public class APIUtil {
         }
     }
 
-    public static ResponseBody getResponseBody (){
+    public static ResponseBody getResponseBody() {
         return responseBody;
     }
 
-    public static void hitPOST (String resource, RequestBody body){
+    public static void hitPOST(String resource, RequestBody body) {
         String uri = Config.getProperty("baseURL") + resource;
         ObjectMapper objectMapper = new ObjectMapper();
         String bodyJson = "";
         try {
             bodyJson = objectMapper.writeValueAsString(body);
-        }catch (JsonProcessingException e){
+        } catch (JsonProcessingException e) {
             e.printStackTrace();
         }
         Response response = RestAssured.given().contentType(ContentType.JSON).body(bodyJson).when().post(uri);
@@ -48,6 +48,40 @@ public class APIUtil {
             responseBody = objectMapper.readValue(response.asString(), ResponseBody.class);
         } catch (Exception j) {
             j.printStackTrace();
+        }
+    }
+
+    public static void hitUpdate(String resource, RequestBody body) {
+        String uri = Config.getProperty("baseURL") + resource;
+        ObjectMapper objectMapper = new ObjectMapper();
+        String bodyJson = "";
+        try {
+            bodyJson = objectMapper.writeValueAsString(body);
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
+        Response response = RestAssured.given().contentType(ContentType.JSON).body(bodyJson).when().put(uri);
+        System.out.println(response.asString());
+        System.out.println(("Status code" + response.statusCode()));
+        //Assert.assertEquals("Hit Update is failed", 200, response);
+        try {
+            responseBody = objectMapper.readValue(response.asString(), ResponseBody.class);
+        } catch (Exception j) {
+            j.printStackTrace();
+        }
+    }
+
+    public static void hitDelete(String resource) {
+        String uri = Config.getProperty("baseURL") + resource;
+        Response response = RestAssured.delete(uri);
+        System.out.println(response.asString());
+        System.out.println("STATUS CODE is: " + response.statusCode());
+        //Assert.assertEquals("GET API hit failed", 200, response);
+        ObjectMapper objectMapper = new ObjectMapper();
+        try {
+            responseBody = objectMapper.readValue(response.asString(), ResponseBody.class);
+        } catch (Exception j) {
+            System.out.println("Response couldn't match properly with Jackson Library");;
         }
     }
 }

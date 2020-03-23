@@ -15,3 +15,11 @@
 [WARN ] 2020-03-05 21:02:38.795 [main] log - user enters wooden spoon name
 [WARN ] 2020-03-05 21:02:38.807 [main] log - user checks if it's ok
 [INFO ] 2020-03-07 16:24:09.931 [main] log - Scenario start pointUser checks the dZone pages links
+[INFO ] 2020-03-21 17:06:44.377 [main] log - Scenario start pointUser deletes teacher
+[INFO ] 2020-03-21 17:10:22.114 [main] log - Scenario start pointUser deletes teacher
+[INFO ] 2020-03-22 13:04:51.565 [main] log - Scenario start pointUI vs API cross data validation
+[INFO ] 2020-03-22 13:14:51.363 [main] log - Scenario start pointUI vs API cross data validation
+[INFO ] 2020-03-22 13:15:51.719 [main] log - Scenario start pointUI vs API cross data validation
+[INFO ] 2020-03-22 13:18:16.994 [main] log - Scenario start pointUI vs API cross data validation
+[INFO ] 2020-03-22 13:20:51.099 [main] log - Scenario start pointUI vs API cross data validation
+[INFO ] 2020-03-22 13:35:02.389 [main] log - Scenario start pointUI vs API cross data validation

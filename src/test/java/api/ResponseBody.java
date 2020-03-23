@@ -13,5 +13,6 @@ public class ResponseBody {
 
     List <student> students;
     List <Teacher> teachers;
-
+    String message;
+    // Json = ResponseBody
 }

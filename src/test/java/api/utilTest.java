@@ -60,4 +60,10 @@ public class utilTest {
         //requestBody.setTeacherId(2220);
         APIUtil.hitPOST("/teacher/create", requestBody);
     }
+
+    @Test
+    public void deleteTesting (){
+        String resource = "/teacher/delete/2211";
+        APIUtil.hitDelete(resource);
+    }
 }
