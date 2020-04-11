@@ -9,10 +9,13 @@ import utilities.extent;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = {"html:target/cucumber-reports"}, //"json: target/cukesreport.json"},
+        plugin = {
+                "pretty", "html:target/cucumber-html-report",
+                "json:target/cucumber.json", "junit:target/cucumber.xml",
+                "rerun:target/rerun.txt"},
         features = "src/test/resources/features",
         glue = "step_definitions",
-        dryRun = false,
+        dryRun = true,
         tags = "@e2e"
 )
 public class CukesRunner {
