@@ -13,7 +13,7 @@ import org.junit.Test;
 @Data
 @JsonInclude(JsonInclude.Include.NON_DEFAULT)
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class jacksonTest {
+public class    jacksonTest {
 
         @Test
         public void jackson() throws Exception {

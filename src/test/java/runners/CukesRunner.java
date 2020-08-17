@@ -15,8 +15,8 @@ import utilities.extent;
                 "rerun:target/rerun.txt"},
         features = "src/test/resources/features",
         glue = "step_definitions",
-        dryRun = true,
-        tags = "@e2e"
+        dryRun = false,
+        tags = "@googletest"
 )
 public class CukesRunner {
 //@AfterClass

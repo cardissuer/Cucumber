@@ -21,6 +21,7 @@ public class Google_StepDefs {
         Driver.getDriver().get("https://www.google.com");
         log.info("user is on google page");
     }
+
     @Then("User should see title contains Google")
     public void user_should_see_title_contains_Google() {
 
