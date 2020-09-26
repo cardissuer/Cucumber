@@ -1,10 +1,10 @@
-package step_definitions.smartbear_stepDefs;
+package step_definitions.smartbear_stepdefs;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.junit.Assert;
 import pages.smartbear_pages.SmartBearLoginPage;
 import utilities.Driver;
-public class SBLogin_StepDefs {
+public class    SBLogin_StepDefs {
     SmartBearLoginPage sbLoginPage = new SmartBearLoginPage();
     @When("User is on SmartBear login page")
     public void user_is_on_SmartBear_login_page() {
